@@ -1,6 +1,5 @@
-import 'package:fast_food/screens/splash.dart';
 import 'package:flutter/material.dart';
-
+import 'package:fast_food/screens/login.dart';
 
 class Welcome extends StatelessWidget {
   @override
@@ -39,7 +38,7 @@ class Welcome extends StatelessWidget {
             child: FlatButton(
               minWidth: 300,
               height: 60,
-              textColor: Color.fromRGBO(255, 240, 211, 1),
+              textColor: Color(0xffffffff),
               onPressed: () {},
               child: Text('Busca, Ordena, Disfruta'),
             ),
@@ -49,24 +48,26 @@ class Welcome extends StatelessWidget {
               padding: const EdgeInsets.only(top: 50),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color(0xff24F229).withOpacity(0.7),
-                  borderRadius: BorderRadius.circular(15)),
-                  width: 320,
-                  height: 65,
-                  margin: EdgeInsets.only(top: 50),
-                  child: FlatButton(
-                    onPressed: (){
-                      Navigator.push(context,MaterialPageRoute(builder: (context) => Splash()));
-                    },
-                    child: Text ('Iniciar ahora',
+                    color: Color(0xff24F229).withOpacity(0.7),
+                    borderRadius: BorderRadius.circular(15)),
+                width: 320,
+                height: 65,
+                margin: EdgeInsets.only(top: 50),
+                child: FlatButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Login()));
+                  },
+                  child: Text(
+                    'Iniciar ahora',
                     style: TextStyle(
                       fontSize: 25,
                       color: Color(0xffffffff),
                     ),
-                    ),
-                    ),
-                    ),
-                    ),
+                  ),
+                ),
+              ),
+            ),
           )
         ],
       ),

@@ -5,9 +5,10 @@ class Splash extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage ('assets/images/fastfood.png'),
+          image: DecorationImage(
+        image: AssetImage('assets/images/fastFood.png'),
         fit: BoxFit.fill,
-        )),
+      )),
     );
   }
 }

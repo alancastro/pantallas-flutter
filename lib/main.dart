@@ -10,14 +10,15 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Fast Food App',
-      home: Scaffold(
-        body: PageView(children: [
-          Welcome(),
-          Splash(),
-        ],),
-      )
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Fast Food App',
+        home: Scaffold(
+          body: PageView(
+            children: [
+              Splash(),
+              Welcome(),
+            ],
+          ),
+        ));
   }
 }
